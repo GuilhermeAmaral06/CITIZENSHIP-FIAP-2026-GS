@@ -1,0 +1,23 @@
+# Arquivos gerados pelo Maven
+target/
+
+# Credenciais locais do Oracle - NUNCA enviar para o GitHub
+.env
+
+# VS Code (mantem apenas a lista de extensoes recomendadas)
+.vscode/*
+!.vscode/extensions.json
+
+# Outras IDEs
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.factorypath
+bin/
+
+# Sistema operacional e logs
+.DS_Store
+Thumbs.db
+*.log
