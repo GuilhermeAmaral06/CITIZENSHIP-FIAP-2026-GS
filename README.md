@@ -9,7 +9,7 @@ Engenharia de Software · 2º ano.
 | | |
 |---|---|
 | **Repositório** | https://github.com/GuilhermeAmaral06/CITIZENSHIP-FIAP-2026-GS |
-| **Deploy (Render)** | _preencher após o deploy_ |
+| **Deploy (Render)** | (https://citizenship-fiap-2026-gs.onrender.com) |
 | **Teste rápido** | abra o link do deploy (página com todos os endpoints) ou `/health` |
 
 ## Integrantes
