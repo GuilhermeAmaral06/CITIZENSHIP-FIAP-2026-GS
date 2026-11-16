@@ -238,21 +238,4 @@ Todo erro volta no mesmo JSON:
 | 422 | Regra de negócio impede o agendamento (RN01 e RN02) | `RegraNegocioException` |
 | 500 | Falha de acesso ao banco de dados ou erro inesperado | `BancoDadosException` |
 
-## Deploy no Render
 
-Usuário e senha do Oracle nunca ficam no código nem no GitHub: a `ConnectionFactory` lê as
-variáveis de ambiente `DB_URL`, `DB_USER` e `DB_PASSWORD`.
-
-1. Envie o código para o GitHub (branch `main`).
-2. Em https://render.com crie um **New > Web Service** e conecte este repositório.
-3. Runtime: **Docker** (o `Dockerfile` está na raiz). Plano: **Free**.
-4. Em **Environment**, crie as variáveis:
-   | Variável | Valor |
-   |---|---|
-   | `DB_URL` | `jdbc:oracle:thin:@oracle.fiap.com.br:1521:ORCL` |
-   | `DB_USER` | `rm` + RM |
-   | `DB_PASSWORD` | senha do Oracle |
-5. Clique em **Deploy** e, ao terminar, abra `https://<nome>.onrender.com/health`.
-
-O plano gratuito do Render "dorme" depois de um tempo sem uso: a primeira requisição pode levar
-cerca de um minuto. A API não está fora do ar, só está acordando.
